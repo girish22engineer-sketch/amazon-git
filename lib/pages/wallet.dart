@@ -60,13 +60,23 @@ class WalletSheet extends StatelessWidget {
                   child: Column(
                     children: [
                       CircleAvatar(child: Icon(Icons.change_circle_outlined),),
-                      Text("Rechare")
+                      Text("Recharge")
                     ],
+                    
                   ),
+                  
                 )
               ],)
             ],),
-           )
+           ),
+           Container(
+            height: size.height*0.2,
+            width: size.width*0.6,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all()
+            ),
+           ),
         ],),
             ),
       ));
