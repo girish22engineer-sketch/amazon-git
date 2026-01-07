@@ -7,11 +7,23 @@ class WalletSheet extends StatelessWidget {
     var size =MediaQuery.of(context).size;
     return SafeArea(
       
-      child: SizedBox(
-        height: size.height*0.7,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.vertical(top:Radius.circular(20)),
+          gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            colors:[
+            Colors.yellow,
+            Colors.white
+                      ])
+
+        ),
+        height: size.height*0.75,
         child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(children: [
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
            Container(
             color: Colors.yellow,
             child: Column(children: [
@@ -69,14 +81,68 @@ class WalletSheet extends StatelessWidget {
               ],)
             ],),
            ),
-           Container(
-            height: size.height*0.2,
-            width: size.width*0.6,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all()
-            ),
+           Center(
+             child: Container(
+              height: size.height*0.2,
+              width: size.width*0.8,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all()
+              ),child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    
+                    Text(" Your Reward",style: TextStyle(
+                      
+                      fontWeight: FontWeight.bold
+                    ),),
+                    SizedBox(height: 10,),
+                    Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [ 
+                      SizedBox(child: Column(
+                        children: [
+                          Text("Cashback earned"),
+                          Text("🪙₹0")
+                        ],
+                      )),
+                      SizedBox(child: Column(
+                        children: [
+                          Text("Offer collected"),
+                          Text("🫴0")
+                        ],
+                      )),
+                      SizedBox(child: Column(
+                        children: [
+                          Text("Scratchcards"),
+                          Text("🗃️0")
+                        ],
+                      )),
+             
+                    ],)
+                   
+                  ],
+                ),
+              ),
+             ),
            ),
+           Text(" Top Actions for you",style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16
+           ),),
+           Center(
+             child: Container(
+              height: size.height*0.2,
+              width: size.width*0.8,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all()
+              ),
+             ),
+           )
         ],),
             ),
       ));
