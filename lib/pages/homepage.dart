@@ -13,7 +13,8 @@ class Homepage extends StatelessWidget {
           children: [
             Container(height: 35,
             color: Colors.blue.shade100,
-            child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 
                

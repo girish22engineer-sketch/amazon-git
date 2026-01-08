@@ -22,7 +22,9 @@ class WalletSheet extends StatelessWidget {
         height: size.height*0.75,
         child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          spacing: 5,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
            Container(
             color: Colors.yellow,
@@ -33,7 +35,10 @@ class WalletSheet extends StatelessWidget {
                 children: [
                   CircleAvatar(),
                   SizedBox(width: 10,),
-                  Text("Smart wallet"),
+                  Text("Smart wallet",style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16
+                  ),)
                 ],
               )),
               
@@ -56,7 +61,7 @@ class WalletSheet extends StatelessWidget {
                   child: Column(
                     children: [
                       CircleAvatar(child: Icon(Icons.payment),),
-                      Text("Second Money")
+                      Text("Send Money")
                     ],
                   ),
                 ),
@@ -64,7 +69,7 @@ class WalletSheet extends StatelessWidget {
                   child: Column(
                     children: [
                       CircleAvatar(child: Icon(Icons.receipt),),
-                      Text("Bils")
+                      Text("   Bils   ")
                     ],
                   ),
                 ),
@@ -72,7 +77,7 @@ class WalletSheet extends StatelessWidget {
                   child: Column(
                     children: [
                       CircleAvatar(child: Icon(Icons.change_circle_outlined),),
-                      Text("Recharge")
+                      Text(" Recharge ")
                     ],
                     
                   ),
@@ -84,7 +89,7 @@ class WalletSheet extends StatelessWidget {
            Center(
              child: Container(
               height: size.height*0.2,
-              width: size.width*0.8,
+              width: size.width*0.9,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
@@ -92,6 +97,7 @@ class WalletSheet extends StatelessWidget {
               ),child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
+                  spacing: 5,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     
@@ -104,19 +110,19 @@ class WalletSheet extends StatelessWidget {
                       children: [ 
                       SizedBox(child: Column(
                         children: [
-                          Text("Cashback earned"),
+                          Text("Cashback"),
                           Text("🪙₹0")
                         ],
                       )),
                       SizedBox(child: Column(
                         children: [
-                          Text("Offer collected"),
+                          Text("Offer collect"),
                           Text("🫴0")
                         ],
                       )),
                       SizedBox(child: Column(
                         children: [
-                          Text("Scratchcards"),
+                          Text("Scratchcard"),
                           Text("🗃️0")
                         ],
                       )),
@@ -134,12 +140,15 @@ class WalletSheet extends StatelessWidget {
            ),),
            Center(
              child: Container(
-              height: size.height*0.2,
-              width: size.width*0.8,
+              height: size.height*0.15,
+              width: size.width*0.9,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 border: Border.all()
+              ),
+              child: Center(
+                child: Text("You're all set. no pending actions"),
               ),
              ),
            )
