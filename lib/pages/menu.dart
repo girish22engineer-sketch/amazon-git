@@ -22,17 +22,17 @@ class Menu extends StatelessWidget {
                     
                     children: [
                       
-                      Divisions(name: "Top Picks", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                      Divisions(name: "Top Picks",image: 'assets/images/toppicks.jpg',),
                       Divider(),
-                      Divisions(name: "Amazon pay", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                      Divisions(name: "Amazon pay",image: 'assets/images/pay.jpg',),
                       Divider(),
-                      Divisions(name: "Mobiles", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                      Divisions(name: "Mobiles",image: 'assets/images/mobiles.jpg',),
                       Divider(),
-                      Divisions(name: "Deals", imageurl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s'),
+                      Divisions(name: "Deals", image: 'assets/images/deal.jpg',),
                       Divider(),
-                      Divisions(name: "Beauty", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                      Divisions(name: "Beauty", image: 'assets/images/beauty.jpg',),
                       Divider(),
-                      Divisions(name: "Kitchen", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                      Divisions(name: "Kitchen", image: 'assets/images/kitchen.jpg',),
                     ],
                   ),
                 
@@ -50,43 +50,44 @@ class Menu extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                          Divisions(name: "Mobiles", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                          Divisions(name: "Fashion", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                          Divisions(name: "Electronics", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                          Divisions(name: "Mobiles", image: 'assets/images/mobiles.jpg'),
+                          Divisions(name: "Fashion", image: 'assets/images/fashion.jpg'),
+                          Divisions(name: "Electronics", image: 'assets/images/electronics.jpg'),
                                         
                         ],),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                          Divisions(name: "Travel", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                          Divisions(name: "Deals", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                          Divisions(name: "Home", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                          Divisions(name: "Travel", image: 'assets/images/travel.jpg'),
+                          Divisions(name: "Deals", image: 'assets/images/deal.jpg'),
+                          Divisions(name: "Home", image: 'assets/images/home.jpg'),
                                         
                         ],),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Divisions(name: "Everyday needs", imageurl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                            Divisions(name: "Beauty", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                            Divisions(name: "Furnitures", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                            Divisions(name: "everydayneeds", image: 'assets/images/everydayneeds.jpg'),
+                            Divisions(name: "Beauty", image: 'assets/images/beauty.jpg'),
+                            Divisions(name: "Furnitures", image: 'assets/images/furniture.jpg'),
                           ],
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Divisions(name: "Sports", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                            Divisions(name: "Toys", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                            Divisions(name: "Grocery", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                            Divisions(name: "Sports", image: 'assets/images/sports.jpg'),
+                            Divisions(name: "Toys", image: 'assets/images/toys.jpg'),
+                            Divisions(name: "Grocery", image: 'assets/images/grocery.jpg'),
                           ],
                         ),
                         SizedBox(height: 10,),
                         Text("  Explore More",style: TextStyle(fontWeight: FontWeight.bold),),
                          SizedBox(height: 5,),
-                        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Divisions(name: "Prime", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                          Divisions(name: "Buisness", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
-                          Divisions(name: "FunZone", imageurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz63U8vkMMEnkCk3ERYvWk2JQaE1EwmHcsYw&s"),
+                          Divisions(name: "Prime", image: 'assets/images/prime.jpg'),
+                          Divisions(name: "Buisness", image: 'assets/images/deal.jpg'),
+                          Divisions(name: "FunZone", image: 'assets/images/funzone.jpg'),
 
                         ],),
                        
@@ -117,40 +118,53 @@ class Menu extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 
                   children: [
-                  Container(
-                    decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.grey),
-              
-                  ),child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Order"),
+                  InkWell(
+                    onTap: (){},
+                    child: Container(
+                      decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: Colors.grey),
+                                  
+                    ),child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Order"),
+                    ),
+                    ),
                   ),
+                  InkWell(
+                    onTap: (){},
+                    child: Container(decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: Colors.grey)
+                    ),child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Buy Again"),
+                    ),
+                    ),
                   ),
-                  Container(decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.grey)
-                  ),child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Buy Again"),
+                  InkWell(
+                    onTap: (){},
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.grey),
+                      ),child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text("Account"),
+                      ),
+                    ),
                   ),
-                  ),Container(
-                    decoration: BoxDecoration(
+                  InkWell(
+                    onTap: (){},
+                    child: Container(
+                      decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(color: Colors.grey),
                     ),child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Account"),
+                      child: Text("List"),
                     ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    border: Border.all(color: Colors.grey),
-                  ),child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("List"),
-                  ),
+                    ),
                   )
                 ],),
             ),

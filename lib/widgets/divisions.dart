@@ -40,12 +40,12 @@ import 'package:flutter/material.dart';
 
 class Divisions extends StatelessWidget {
   final String name;
-  final String imageurl;
+  final String image;
 
   const Divisions({
     super.key,
     required this.name,
-    required this.imageurl,
+    required this.image,
   });
 
   @override
@@ -56,12 +56,13 @@ class Divisions extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.network(
-            imageurl,
-            height: 60,
-            width: 50,
-            fit: BoxFit.contain,
+          InkWell(
+            onTap: () {},
+            child: CircleAvatar(
+              
+              child: Image.asset('$image')),
           ),
+
           const SizedBox(height: 6),
           Text(
             name,
