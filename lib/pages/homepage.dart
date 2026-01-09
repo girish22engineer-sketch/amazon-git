@@ -38,9 +38,11 @@ class Homepage extends StatelessWidget {
             ,SizedBox(height: 10,),
             SizedBox(
               height: 200,
-              child: ListView(
+              child: SingleChildScrollView(
+                
                 
                 scrollDirection: Axis.horizontal,
+                child: Row(
                 children: [
                 Poster(color: const Color.fromARGB(255, 8, 45, 9), brand: "Rollex", offer: "50% off", description: "best selling watches"), 
                 Poster(color: const Color.fromARGB(255, 156, 142, 23), brand: "amazon pay", offer: "5% cashback", description:"on your mobile recharges"), 
@@ -48,7 +50,9 @@ class Homepage extends StatelessWidget {
                 Poster(color: Colors.blue, brand: "Adidas", offer: "Under 500", description: "best selling shoes"),
                 ],
               ),
-            ),SizedBox(height: 10,),       
+            ),
+            ),
+            SizedBox(height: 10,),       
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Column(
