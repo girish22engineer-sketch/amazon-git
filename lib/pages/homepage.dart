@@ -80,7 +80,7 @@ class Homepage extends StatelessWidget {
                       Divisions(name: "jewellery",image: 'assets/images/jewellery.jpg',),
                       Divisions(name: "automotive",image: 'assets/images/automotive.jpg',),
                       Divisions(name: "stationery",image: 'assets/images/stationery.jpg',),
-                      Divisions(name: "prime video",image: 'assets/images/prime_video.jpg',),
+                      Divisions(name: "prime video",image: 'assets/images/prime.jpg',),
                     ],
                   ),
                  

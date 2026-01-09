@@ -16,7 +16,8 @@ class WalletSheet extends StatelessWidget {
             colors:[
             Colors.yellow,
             Colors.white
-                      ])
+                      ]
+                      )
 
         ),
         height: size.height*0.75,
@@ -29,18 +30,22 @@ class WalletSheet extends StatelessWidget {
            Container(
             color: Colors.yellow,
             child: Column(children: [
-               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
               SizedBox(child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0NrHT4rEeertzPwN7CT7V6DSYqxNq0cWv8g&s'),
+                  ),
                   SizedBox(width: 10,),
                   Text("Smart wallet",style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16
                   ),)
                 ],
-              )),
+              )
+              ),
               
               IconButton(onPressed: ()=>Navigator.pop(context),
                icon: Icon(Icons.close))
