@@ -7,6 +7,7 @@ class Cart extends StatefulWidget {
 }
 
 class _CartState extends State<Cart> {
+  int quantity=1;
   bool isSelected= false;
   @override
   Widget build(BuildContext context) {
@@ -110,12 +111,13 @@ class _CartState extends State<Cart> {
         child: Column(
         
           children: [
-            SizedBox(height: size.height*0.4,
-              child: Image.network(
-                "https://www.techhive.com/wp-content/uploads/2023/04/AirPods-Pro-2nd-gen-hero.jpg?quality=50&strip=all",
+            SizedBox(
+              height: size.height*0.4,
+              child: Image.asset(
+                'assets/images/airpods.webp',
                 fit: BoxFit.cover,
-              ),
-            ),SizedBox(height: 10,),
+            ),),
+            SizedBox(height: 10,),
             Container(
               height: 40,
               width: size.width * 0.35,
@@ -125,10 +127,26 @@ class _CartState extends State<Cart> {
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const [
-                  Icon(Icons.remove),
-                  Text("1"),
-                  Icon(Icons.add),
+                children: [
+                  InkWell(
+                    onTap: (){
+                      if (quantity > 1) {
+                        setState(() {
+                          quantity--;
+                        });
+                      }
+                    },
+                    child: Icon(Icons.remove)
+                    ),
+                Text('$quantity'),
+
+                  InkWell(
+                    onTap: (){
+                      setState(() {
+                        quantity++;
+                      });
+                    },
+                    child: Icon(Icons.add)),
                 ],
               ),
             ),

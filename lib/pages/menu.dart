@@ -33,6 +33,9 @@ class Menu extends StatelessWidget {
                       Divisions(name: "Beauty", image: 'assets/images/beauty.jpg',),
                       Divider(),
                       Divisions(name: "Kitchen", image: 'assets/images/kitchen.jpg',),
+                      Divider(),
+                      Divisions(name: "Sports", image: 'assets/images/sports.jpg',),
+                      Divider(),                    
                     ],
                   ),
                 
@@ -42,7 +45,7 @@ class Menu extends StatelessWidget {
                     
                     child: SingleChildScrollView(
                       child: Column(
-                        spacing: 10,
+                        spacing: 15,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("  Top Categories for you",style: TextStyle(fontWeight: FontWeight.bold),),
